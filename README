@@ -1,0 +1,23 @@
+Yocto layer for images and extra recipes for the University of Idaho 
+MOOS-based autonomous underwater vehicle design 
+
+This layer depends on:
+
+URI: git://git.yoctoproject.org/poky.git
+branch: dizzy
+revision: HEAD
+
+URI: git://git.openembedded.org/meta-openembedded.git
+branch: dizzy
+revision: HEAD
+
+URI: git://github.com/gumstix/meta-gumstix.git
+branch: dizzy
+revision: HEAD
+
+URI: git://github.com/gumstix/meta-gumstix-extra.git
+branch: dizzy
+revision: HEAD
+
+Layer maintainer: Dave Billin <david.billin@vandals.uidaho.edu> 
+                  for the University of Idaho in Moscow, Idaho
