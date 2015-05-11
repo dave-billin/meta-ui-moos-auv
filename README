@@ -1,7 +1,33 @@
+#=============================================================================
 Yocto layer for images and extra recipes for the University of Idaho 
 MOOS-based autonomous underwater vehicle design 
+#=============================================================================
 
+#------------------------------------------------------------------
+Layer maintained by Dave Billin <david.billin@vandals.uidaho.edu> 
+for the University of Idaho in Moscow, Idaho
+#------------------------------------------------------------------
+
+In order to use this layer, you must make the Yocto build system aware of it.
+Assuming the ui-moos-auv layer exists at the top-level of your yocto build 
+tree, you can add it to the build system by adding the location of the 
+ui-moos-auv layer to bblayers.conf, along with any other layers needed. 
+
+Example:
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-ui-moos-auv \
+    "
+
+#------------------------
 This layer depends on:
+#------------------------
+
+URI: git://git.yoctoproject.org/poky.git
+branch: dizzy
+revision: HEAD
 
 URI: git://git.yoctoproject.org/poky.git
 branch: dizzy
@@ -19,5 +45,3 @@ URI: git://github.com/gumstix/meta-gumstix-extra.git
 branch: dizzy
 revision: HEAD
 
-Layer maintainer: Dave Billin <david.billin@vandals.uidaho.edu> 
-                  for the University of Idaho in Moscow, Idaho
