@@ -16,10 +16,10 @@ IMAGE_FEATURES += " \
 "
 
 # Add some useful development tools to the image
+# TODO: octave
 DEV_TOOLS_INSTALL += " \
   git \
   lua \
-# TODO: octave \
   python \
   quilt \
   rsync \
@@ -48,8 +48,8 @@ GRAPHICS_LIBS_remove = " \
 # Additional software packages to install
 #==========================================
 
+# TODO: chrony
 CORE_IMAGE_EXTRA_INSTALL += " \
-# TODO: chrony \
 "
 
 # Create a generic 'auvuser' user account, part of the auvuser group,

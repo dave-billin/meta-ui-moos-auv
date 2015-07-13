@@ -20,9 +20,7 @@ KERNEL_DEVICETREE_overo = " \
 LINUX_VERSION = "3.17"
 LINUX_VERSION_EXTENSION = "-custom"
 
-BOOT_SPLASH ?= "logo_linux_clut224-generic.ppm"
-
-FILESEXTRAPATHS_prepend := "${THISDIR}/linux-gumstix-3.17:"
+FILESEXTRAPATHS_prepend := "${THISDIR}/linux-ui-moos-auv-fsd-3.17:"
 
 S = "${WORKDIR}/git"
 
@@ -46,5 +44,4 @@ SRC_URI = " \
     file://0014-omap3-overo-Add-device-tree-for-Palo35-board.patch \
     file://0015-gpio-backlight-Discover-driver-during-boot-time.patch \
     file://defconfig \
-    file://${BOOT_SPLASH} \
 "

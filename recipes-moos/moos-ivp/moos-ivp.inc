@@ -13,7 +13,7 @@ DESCRIPTION = "MOOS-IvP autonomy software for marine robotics"
 HOMEPAGE = "www.moos-ivp.org"
 SECTION = "console/scientific"
 DEPENDS = "zlib fltk moos-for-ivp"
-RDEPENDS += "libstdc++"
+#RDEPENDS += "libstdc++"
 PRIORITY = "optional"
 LICENSE = "GPL2"
 
